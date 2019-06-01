@@ -18,12 +18,12 @@ class HomePage extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(120.0),
+                  bottomLeft: Radius.circular(80.0),
                 ),
                 color: Colors.white,
               ),
               child: Padding(
-                padding: EdgeInsets.all(32.0),
+                padding: EdgeInsets.fromLTRB(32.0, 32.0, 32.0, 20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -85,16 +85,13 @@ class HomePage extends StatelessWidget {
                         ),
                         Spacer(),
                         Container(
-                          width: 200.0,
+                          width: 150.0,
                           child: Image.network(
                             img,
                             fit: BoxFit.cover,
                           ),
                         ),
                       ],
-                    ),
-                    SizedBox(
-                      height: 20.0,
                     ),
                   ],
                 ),
@@ -110,9 +107,6 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  SizedBox(
-                    height: 16.0,
-                  ),
                   Text(
                     'Planting',
                     style: TextStyle(color: Colors.white),
